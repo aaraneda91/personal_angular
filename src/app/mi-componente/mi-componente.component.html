@@ -1,0 +1,19 @@
+<hr>
+<p>mi-componente works!</p>
+
+<button (click)="addAge()">Aumentar Edad</button>
+<button (click)="rmAge()">Disminuir  Edad</button>
+
+<h3 [style.background] = "age < 30 ? 'orange' : 'green'">
+    Tu edad es: {{age}}
+</h3>
+
+<div *ngIf = "age < 18">
+    Eres un cabro chico.
+</div>
+<div *ngIf = "age >= 18 && age < 30">
+    Sigues siendo un cabro chico.
+</div>
+<div *ngIf = "age >= 30">
+    Chad.
+</div>
