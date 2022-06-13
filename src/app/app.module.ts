@@ -2,15 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { MiComponenteComponent } from './mi-componente/mi-componente.component';
+import { TemplatesModule } from './templates/templates.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MiComponenteComponent
+    DashboardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    TemplatesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
