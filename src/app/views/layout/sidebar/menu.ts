@@ -2,13 +2,22 @@ import { MenuItem } from './menu.model';
 
 export const MENU: MenuItem[] = [
   {
-    label: 'Main',
+    label: 'Inicio',
     isTitle: true
   },
   {
     label: 'Dashboard',
     icon: 'home',
     link: '/dashboard'
+  },
+  {
+    label: 'Administración',
+    isTitle: true
+  },
+  {
+    label: 'Usuarios',
+    icon: 'users',
+    link: '/admin/usuarios'
   },
   {
     label: 'Web Apps',
